@@ -6,10 +6,11 @@ body {
   display: inline-block;
 }
 
-.card-img-top {
+.card-img-top,
+img {
   height: 280px;
   width: 100%;
   object-fit: cover;
-  object-position: 0 25;
+  object-position: 0 15;
   margin: 0 auto;
 }

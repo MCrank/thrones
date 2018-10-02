@@ -1,4 +1,5 @@
 import { printToDom } from '../helpers/util.js';
+import { detailsBuilder } from './details.js';
 
 const characters = [
   {
@@ -23,14 +24,14 @@ const characters = [
     id: 'character4',
     name: 'Gregor Clegane',
     house: 'Clegane',
-    imageUrl: 'http://www.theworkprint.com/wp-content/uploads/2015/06/gregor-clegane-the-mountain-game-of-thrones.jpg'
+    imageUrl: 'https://timedotcom.files.wordpress.com/2015/09/the-mountain-got.jpg?quality=85'
   }
 ];
 
 const characterClick = (e) => {
   const characterId = e.target.closest('.character-card').id;
   const currentCharacter = characters.find((x) => x.id === characterId);
-  console.log('CurrentCharacter', currentCharacter);
+  detailsBuilder(currentCharacter);
 };
 
 const createEvents = () => {
@@ -47,7 +48,7 @@ const charactersBuilder = () => {
     domString += `<div class="card">`;
     domString += `<img class="card-img-top" src="${character.imageUrl}" alt="${character.name}">`;
     domString += `<div class="card-body">`;
-    domString += `<h5 class="card-title">${character.name}</h5>`;
+    domString += `<h5 class="card-title text-center">${character.name}</h5>`;
     domString += `</div>`;
     domString += `</div>`;
     domString += `</div>`;
