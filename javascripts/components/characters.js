@@ -1,3 +1,5 @@
+import { printToDom } from '../helpers/util.js';
+
 const characters = [
   {
     id: 'character1',
@@ -25,4 +27,12 @@ const characters = [
   }
 ];
 
-console.log(characters);
+const charactersBuilder = () => {
+  let domString = '';
+  characters.forEach((character) => {
+    domString += `<h1>${character.name}</h1>`;
+  });
+  printToDom(domString, 'characters');
+};
+
+export { charactersBuilder };
