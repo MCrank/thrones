@@ -1,3 +1,5 @@
+import { printToDom } from '../helpers/util.js';
+
 const characters = [
   {
     id: 'character1',
@@ -9,7 +11,7 @@ const characters = [
     id: 'character2',
     name: 'Theon Greyjoy',
     house: 'Greyjoy',
-    imageUrl: 'assets1.ignimgs.com/vid/thumbnails/user/2014/04/01/20823568_theon_game_of_thrones.jpg'
+    imageUrl: 'http://assets1.ignimgs.com/vid/thumbnails/user/2014/04/01/20823568_theon_game_of_thrones.jpg'
   },
   {
     id: 'character3',
@@ -25,4 +27,19 @@ const characters = [
   }
 ];
 
-console.log(characters);
+const charactersBuilder = () => {
+  let domString = '';
+  characters.forEach((character) => {
+    domString += `<div class="col-2 character-card">`;
+    domString += `<div class="card">`;
+    domString += `<img class="card-img-top" src="${character.imageUrl}" alt="${character.name}">`;
+    domString += `<div class="card-body">`;
+    domString += `<h5 class="card-title">${character.name}</h5>`;
+    domString += `</div>`;
+    domString += `</div>`;
+    domString += `</div>`;
+  });
+  printToDom(domString, 'characters');
+};
+
+export { charactersBuilder };
