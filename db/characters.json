@@ -1,0 +1,64 @@
+{
+  "characters": [
+    {
+      "id": "character1",
+      "name": "Hodor",
+      "house": "Star",
+      "imageUrl": "https://www.ilpost.it/wp-content/uploads/2016/05/hodor-game-of-thrones.jpeg"
+    },
+    {
+      "id": "character2",
+      "name": "Theon Greyjoy",
+      "house": "Greyjoy",
+      "imageUrl": "http://assets1.ignimgs.com/vid/thumbnails/user/2014/04/01/20823568_theon_game_of_thrones.jpg"
+    },
+    {
+      "id": "character3",
+      "name": "Joffrey",
+      "house": "Lannister",
+      "imageUrl": "http://static3.businessinsider.com/image/572bb270dd0895d3538b473f-960-720/joffrey.png"
+    },
+    {
+      "id": "character4",
+      "name": "Gregor Clegane",
+      "house": "Clegane",
+      "imageUrl": "https://timedotcom.files.wordpress.com/2015/09/the-mountain-got.jpg?quality=85"
+    },
+    {
+      "id": "character5",
+      "name": "Cersei Lannister",
+      "house": "Lannister",
+      "imageUrl": "https://cdn.images.dailystar.co.uk/dynamic/117/photos/867000/Cersei-Lannister-and-Jaime-Lannister-953867.jpg"
+    },
+    {
+      "id": "character6",
+      "name": "Sansa Stark",
+      "house": "Stark",
+      "imageUrl": "http://img4.wikia.nocookie.net/__cb20121122205519/hieloyfuego/images/2/2e/Sansa_Stark_HBO.jpg"
+    },
+    {
+      "id": "character7",
+      "name": "Tyrion Lannister",
+      "house": "Lannister",
+      "imageUrl": "http://geekandsundry.com/wp-content/uploads/2016/04/Tyrion-Lannister.jpg"
+    },
+    {
+      "id": "character8",
+      "name": "Daenarys Targaryen",
+      "house": "Targaryen",
+      "imageUrl": "https://www.geekcrusade.com/wp-content/uploads/2013/12/Emilia-Clarke-as-Daenerys-Targaryen-.jpg"
+    },
+    {
+      "id": "character9",
+      "name": "Brienne of Tarth",
+      "house": "Tarth",
+      "imageUrl": "https://theoutsiderarg.files.wordpress.com/2013/04/brienne-of-tarth-game-of-thrones-31362150-639-960.png"
+    },
+    {
+      "id": "character10",
+      "name": "Samwell Tarly",
+      "house": "Tarly",
+      "imageUrl": "http://assets.viewers-guide.hbo.com/larges1-ep1-people-profilepic-tarly-samwell-800x800.jpg"
+    }
+  ]
+}
