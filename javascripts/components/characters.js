@@ -7,6 +7,10 @@ const setCharacters = (newArray) => {
   characters = newArray;
 };
 
+const getCharacterz = () => {
+  return characters;
+};
+
 const characterClick = (e) => {
   const characterId = e.target.closest('.character-card').id;
   const currentCharacter = characters.find((x) => x.id === characterId);
@@ -20,9 +24,26 @@ const createEvents = () => {
   }
 };
 
-const charactersBuilder = () => {
+const sortChars = (e) => {
+  const house = e.target.id;
+  if (house === 'all') {
+    charactersBuilder(characters);
+  } else {
+    const filteredPeeps = characters.filter((x) => x.house === house);
+    charactersBuilder(filteredPeeps);
+  }
+};
+
+const sortEvents = () => {
+  const allButton = document.getElementById('all');
+  const starkButton = document.getElementById('Stark');
+  allButton.addEventListener('click', sortChars);
+  starkButton.addEventListener('click', sortChars);
+};
+
+const charactersBuilder = (charactersArray) => {
   let domString = '';
-  characters.forEach((character) => {
+  charactersArray.forEach((character) => {
     domString += `<div class="col-2 character-card" id="${character.id}">`;
     domString += `<div class="card">`;
     domString += `<img class="card-img-top" src="${character.imageUrl}" alt="${character.name}">`;
@@ -36,4 +57,4 @@ const charactersBuilder = () => {
   createEvents();
 };
 
-export { charactersBuilder, setCharacters };
+export { charactersBuilder, setCharacters, getCharacterz, sortEvents };
