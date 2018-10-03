@@ -7,7 +7,6 @@ const closeButtonEvent = () => {
 };
 
 const detailsBuilder = (character) => {
-  console.log('Character in Details', character);
   let domString = '';
   domString += `<div class="col-6 offset-md-3">`;
   domString += `<div class="row">`;
